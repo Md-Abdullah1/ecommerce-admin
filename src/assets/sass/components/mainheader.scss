@@ -1,0 +1,54 @@
+$primary_color : #005F41;
+$secondary_color : #1F9151;
+$secondary_color_2 : #117C40;
+$tertiary_color : #303934;
+$white : #FFFFFF;
+$black : #213028;
+
+.mainHeader{
+    position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width: 100%;
+  height: 8vh;
+  z-index: 1;
+  padding: 1vh 10vw;
+  background-color: $primary_color;
+  color : $white;
+  box-shadow: 0px 0px 5px 0px rgba(153, 153, 153, 0.1);
+  .logo {
+    display: flex;
+    width: 14vw;
+    height:100%;
+    align-items: center;
+    justify-content:center;
+    
+    // padding:1vh 1vw;
+    .logo-img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .rightPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    // background-color: $secondary_color;
+    padding: 1vh 1vw;
+    & > div{
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+      gap: 0.4vw;
+      .rightIcons{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
